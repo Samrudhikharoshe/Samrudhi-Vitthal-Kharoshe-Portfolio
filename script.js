@@ -64,15 +64,6 @@ document.querySelectorAll(".filter").forEach(button => {
   });
 });
 
-document.querySelectorAll('.project-link, .socials a').forEach(link => {
-  link.addEventListener("click", event => {
-    if (link.getAttribute("href") === "#") {
-      event.preventDefault();
-      alert("Add your GitHub/LinkedIn/project URL here.");
-    }
-  });
-});
-
 document.getElementById("contactForm").addEventListener("submit", event => {
   event.preventDefault();
 
